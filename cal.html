@@ -1,0 +1,99 @@
+<!-- ╭━━━┳━━━┳━━━┳╮╱╭┳━━━┳━╮╱╭╮
+┃╭━━┫╭━╮┃╭━╮┃┃╱┃┃╭━╮┃┃╰╮┃┃
+┃╰━━┫┃╱┃┃╰━╯┃╰━╯┃┃╱┃┃╭╮╰╯┃
+┃╭━━┫╰━╯┃╭╮╭┫╭━╮┃╰━╯┃┃╰╮┃┃
+┃┃╱╱┃╭━╮┃┃┃╰┫┃╱┃┃╭━╮┃┃╱┃┃┃
+╰╯╱╱╰╯╱╰┻╯╰━┻╯╱╰┻╯╱╰┻╯╱╰━╯
+ -->
+<!-- 
+ ▒█▀▀▀ ░█▀▀█ ▒█▀▀█ ▒█░▒█ ░█▀▀█ ▒█▄░▒█ 
+ ▒█▀▀▀ ▒█▄▄█ ▒█▄▄▀ ▒█▀▀█ ▒█▄▄█ ▒█▒█▒█ 
+ ▒█░░░ ▒█░▒█ ▒█░▒█ ▒█░▒█ ▒█░▒█ ▒█░░▀█ 
+  -->
+
+<!DOCTYPE html>
+<html lang="en" oncontextmenu=" alert('Need source code? comment the first calculation you did here'); return false;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+    <script src="https://kit.fontawesome.com/2226cd0923.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <outside>
+        <div class="main">
+            <!-- top bar -->
+            <div class="top">
+                <div class="navbar">
+                    <span class="time" id="time"></span>
+                    <span class="icons">
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-battery-full"></i>
+                    </span>
+                </div>
+                <!-- top bar// -->
+                <span class="toggler"><i class="fas fas fa-sun" style="color:rgb(39, 39, 23)"></i></span>
+
+                <!-- display -->
+                <span class="textsdone" id="subscreen">Powered By</span>
+                <span class="texts" id="screen">FARHAN</span><span id="line">|</span>
+                <!-- display// -->
+            </div>
+            <!-- body -->
+
+
+            <div class="bottom">
+                <table>
+                    <tr>
+                        <td id="clear" style="background: #ea2d3f !important;color:#fff !important">AC</td>
+                        <td id="pm">+/-</td>
+                        <td value="%" id="percent">%</td>
+                        <td id="del" style="background: #f1c40f !important"><i class="fas fa-backspace"
+                                style="color:#fff; "></i></td>
+
+                    </tr>
+                    <tr>
+                        <td class="digit" value="7">7</td>
+                        <td class="digit" value="8">8</td>
+                        <td class="digit" value="9">9</td>
+                        <td class="operator basic" value="/" cs="&divide;">&divide</td>
+                    </tr>
+                    <tr>
+                        <td class="digit" value="4">4</td>
+                        <td class="digit" value="5">5</td>
+                        <td class="digit" value="6">6</td>
+                        <td value="*" class="operator basic" cs="&times" id="multiply">&times</td>
+
+                    </tr>
+                    <tr>
+                        <td class="digit" value="1">1</td>
+                        <td class="digit" value="2">2</td>
+                        <td class="digit" value="3">3</td>
+                        <td class="operator basic" value="-">&minus;</td>
+                    </tr>
+                    <tr>
+                        <td class="digit" value="0" id="zero">0</td>
+                        <td class="digit" value=".">.</td>
+                        <td style="background: rgb(14, 175, 95) !important; color:#fff !important" id="equal">=</td>
+                        <td class="operator basic" value="+">+</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr> -->
+                </table>
+            </div>
+    </outside>
+    <script src="main.js"></script>
+</body>
+
+</html>
